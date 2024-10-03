@@ -1,38 +1,68 @@
+/* App.css */
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #f0f4f8; /* Light background for contrast */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Arial', sans-serif; /* Use a clean font */
+  color: #333; /* Darker text color for better readability */
 }
 
-.App-link {
-  color: #61dafb;
+.App-header {
+  background-color: #4a90e2; /* Header color */
+  width: 100%;
+  padding: 20px;
+  border-bottom: 2px solid #ddd; /* Slightly lighter border */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  margin: 0; /* Remove default margin */
+  color: white; /* Header text color */
+  font-size: 2.5rem; /* Larger font for emphasis */
+}
+
+.record-button {
+  background-color: #ff4081; /* Vibrant record button color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for a better touch area */
+  font-size: 1.2rem; /* Slightly larger font */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.record-button:hover {
+  background-color: #e91e63; /* Darker shade on hover */
+}
+
+.sound-wave {
+  margin: 20px 0; /* Space above and below the waveform */
+  border: 2px solid #4a90e2; /* Border around the waveform */
+  border-radius: 10px; /* Rounded corners */
+  width: 100%; /* Full width */
+  max-width: 500px; /* Maximum width */
+}
+
+.transcribed-text, .chatbot-response {
+  background-color: #ffffff; /* White background for text */
+  padding: 15px; /* Padding for the text areas */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  margin: 10px 0; /* Space between text areas */
+  width: 100%; /* Full width */
+  max-width: 500px; /* Maximum width */
+}
+
+.transcribed-text {
+  color: #4a90e2; /* Color for transcribed text */
+}
+
+.chatbot-response {
+  color: #333; /* Color for chatbot response */
 }
